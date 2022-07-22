@@ -88,7 +88,6 @@ rm -rf $1/app/GoogleHindiIME*
 rm -rf $1/app/GoogleKeep*
 rm -rf $1/app/GoogleJapaneseInput*
 rm -rf $1/app/GoogleLocationHistory*
-rm -rf $1/app/GoogleLoginService*
 rm -rf $1/app/GoogleMusic*
 rm -rf $1/app/GoogleNow*
 rm -rf $1/app/GooglePhotos*
@@ -179,7 +178,6 @@ rm -rf $1/priv-app/Aiai*
 rm -rf $1/priv-app/AmbientSense*
 rm -rf $1/priv-app/AndroidAuto*
 rm -rf $1/priv-app/AndroidMigrate*
-rm -rf $1/priv-app/AndroidPlatformServices
 rm -rf $1/priv-app/CalendarGoogle*
 rm -rf $1/priv-app/CalculatorGoogle*
 rm -rf $1/priv-app/AssistantGo
@@ -209,14 +207,12 @@ rm -rf $1/priv-app/GoogleOneTimeInitializer
 rm -rf $1/priv-app/GooglePartnerSetup
 rm -rf $1/priv-app/GoogleRestore
 rm -rf $1/priv-app/GoogleSearchGo
-rm -rf $1/priv-app/GoogleServicesFramework
 rm -rf $1/priv-app/GoogleSpeechServices
 rm -rf $1/priv-app/HotwordEnrollment*
 rm -rf $1/priv-app/HotWordEnrollment*
 rm -rf $1/priv-app/MaestroPrebuilt
 rm -rf $1/priv-app/matchmaker*
 rm -rf $1/priv-app/Matchmaker*
-rm -rf $1/priv-app/Phonesky
 rm -rf $1/priv-app/PixelLive*
 rm -rf $1/priv-app/PrebuiltGmsCore*
 rm -rf $1/priv-app/PixelSetupWizard*
@@ -268,7 +264,6 @@ rm -rf $1/app/GoogleHindiIME*
 rm -rf $1/app/GoogleKeep*
 rm -rf $1/app/GoogleJapaneseInput*
 rm -rf $1/app/GoogleLocationHistory*
-rm -rf $1/app/GoogleLoginService*
 rm -rf $1/app/GoogleMusic*
 rm -rf $1/app/GoogleNow*
 rm -rf $1/app/GoogleOne
@@ -393,7 +388,6 @@ rm -rf $1/priv-app/GoogleOneTimeInitializer
 rm -rf $1/priv-app/GooglePartnerSetup
 rm -rf $1/priv-app/GoogleRestore
 rm -rf $1/priv-app/GoogleSearchGo
-rm -rf $1/priv-app/GoogleServicesFramework
 rm -rf $1/priv-app/GoogleSpeechServices
 rm -rf $1/priv-app/Hotword*
 rm -rf $1/priv-app/MaestroPrebuilt
