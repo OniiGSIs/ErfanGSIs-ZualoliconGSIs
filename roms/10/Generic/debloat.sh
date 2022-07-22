@@ -498,7 +498,6 @@ rm -rf $1/app/FireFoxLite
 rm -rf $1/app/Gallery*
 rm -rf $1/app/GoogleClock
 rm -rf $1/app/GugelClock
-rm -rf $1/app/HTMLViewer
 rm -rf $1/app/Jelly
 rm -rf $1/app/Kiwi*
 rm -rf $1/app/messaging
@@ -541,7 +540,6 @@ rm -rf $1/app/EmergencyInfo
 rm -rf $1/app/Etar
 rm -rf $1/app/Exchange2
 rm -rf $1/app/Gallery*
-rm -rf $1/app/HTMLViewer
 rm -rf $1/app/Jelly
 rm -rf $1/app/Messaging
 rm -rf $1/app/messaging
