@@ -14,3 +14,4 @@ elif [[ "$OSTYPE" == "darwin"* ]]; then
     brew install protobuf xz brotli lz4 aria2
     pip install backports.lzma protobuf pycrypto bsdiff4 docopt
 fi
+bash update.sh
