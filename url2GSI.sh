@@ -14,7 +14,7 @@ CLEAN=true
 
 usage()
 {
-    echo "Usage: [--help|-h|-?] [--ab|-b] [--aonly|-a] [--mounted|-m] [--cleanup|-c] $0 <Firmware link> <Firmware type> [Other args]"
+    echo "Usage: [--help|-h|-?] [--ab|-b] [--aonly|-a] [--cleanup|-c] [--merge|-m] [--no-vndks|-nv] [--gapps|-g] $0 <Firmware link> <Firmware type> [Other args]"
     echo -e "\tFirmware link: Firmware download link or local path"
     echo -e "\tFirmware type: Firmware mode"
     echo -e "\t--ab: Build only AB"
@@ -43,8 +43,8 @@ case $key in
     CLEAN=true
     shift
     ;;
-    --dynamic|-d)
-    DYNAMIC=true
+    --merge | -dynamic)
+    MERGE=true
     shift
     ;;
     --help|-h|-?)
@@ -146,9 +146,9 @@ if [ $MOUNTED == false ]; then
         DOWNLOAD "$URL" "$ZIP_NAME"
         URL="$ZIP_NAME"
     fi
-     if [ $DYNAMIC == true ] ; then
-         sudo bash $PROJECT_DIR/dyn.sh ${SRCTYPE} $ZIP_NAME
-     elif [ $DYNAMIC == false ] ; then
+     if [ "$MERGE" == true ]; then
+       "$PROJECT_DIR"/scripts/merger.sh "$URL" || exit 1
+    elif [ $MERGE == false ] ; then
      $TOOLS_DIR/Firmware_extractor/extractor.sh "$URL" "$PROJECT_DIR/working" || exit 1
      export FIRMWARE_PATH=$URL
      MOUNT "$PROJECT_DIR/working"
